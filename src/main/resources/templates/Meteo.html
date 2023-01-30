@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+<main role="main" class="flex-shrink-8">
+    <h1>le meteo d'ajourdhui  <li th:text="${forecast.datetime }" /> </h1>
+        <h5> Vitesse du vent</h5>
+        <li th:text="${forecast.wind }" />
+    <h5> le meteo</h5>
+        <li th:text="${forecast.weather }" />
+    <h5> temperature en C</h5>
+    <li th:text="${forecast.tmax }" />
+
+
+</main>
+</body></html>

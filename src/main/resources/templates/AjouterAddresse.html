@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Adresses</title>
+  <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+<main role="main" class="flex-shrink-8">
+  <h1>Ajouter Adresse</h1>
+  <form action="/meteo" method="post">
+    <div>
+      <label for="address">Please input your adress :</label>
+      <input name="address" id="address">
+    </div>
+    <div>
+      <button>Get the weather at the given address !</button>
+    </div>
+  </form >
+</main>
+</body>
+</html>

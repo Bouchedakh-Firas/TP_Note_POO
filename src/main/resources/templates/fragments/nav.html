@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link th:href = "@{/css/bootstrap.min (3).css}" rel="stylesheet">
+  <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" th:fragments="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/greeting}">Greeting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/addresses}">Addresses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/adresse}">Ajouter Adress</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</body>
+</html>
