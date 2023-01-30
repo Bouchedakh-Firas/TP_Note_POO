@@ -49,7 +49,7 @@ on peut ajouter boostrap à travers un cdn ou bien statiquement en mettant le co
 
 
 _**PARTIE 2**_
-
+les reponse JSON son afficher au console lors de l'éxecution
 **ETAPE 6**
 
 **• Faut-il une clé API pour appeler MeteoConcept ?**
